@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "course-manager": {
+    "product-manager": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/course-manager",
+            "outputPath": "dist/product-manager",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "course-manager:build"
+            "browserTarget": "product-manager:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "course-manager:build:production"
+              "browserTarget": "product-manager:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "course-manager:build"
+            "browserTarget": "product-manager:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "course-manager:serve"
+            "devServerTarget": "product-manager:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "course-manager:serve:production"
+              "devServerTarget": "product-manager:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "course-manager"
+  "defaultProject": "product-manager"
 }

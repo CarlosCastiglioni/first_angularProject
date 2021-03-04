@@ -1,10 +1,9 @@
-export class Course {
+export class Product {
   id: number;
   name: string;
   imageUrl: string;
   price: number;
-  code: string;
-  duration: number;
+  plan: string;
   rating: number;
   releaseDate: string;
   description: string;
